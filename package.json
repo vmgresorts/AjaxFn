@@ -1,7 +1,15 @@
 {
-  "name": "ajaxfn",
+  "private": false,
+  "name": "@vmgresorts/ajaxfn",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple ajax function handler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vmgresorts/AjaxFn"
+  },
+  "bugs": {
+    "url": "https://github.com/vmgresorts/AjaxFn/issues"
+  },
   "main": "dist/ajaxFn.cjs.js",
   "module": "dist/ajaxFn.esm.js",
   "browser": "dist/ajaxFn.umd.js",
@@ -9,10 +17,15 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "node test/test.js",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "prepublish": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ajax",
+    "axios",
+    "qs"
+  ],
+  "author": "vmgresorts",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
