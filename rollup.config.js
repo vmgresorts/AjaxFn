@@ -1,6 +1,5 @@
 import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
-import builtins from "rollup-plugin-node-builtins";
 
 import pkg from "./package.json";
 
@@ -17,7 +16,7 @@ export default [
         qs: "qs"
       }
     },
-    plugins: [commonjs(), json(), builtins()]
+    plugins: [commonjs(), json()]
   },
   {
     input: "src/index.js",
