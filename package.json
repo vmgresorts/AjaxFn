@@ -14,10 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "qs": "^6.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "rollup": "^1.6.0",
     "rollup-plugin-commonjs": "^9.2.1",
