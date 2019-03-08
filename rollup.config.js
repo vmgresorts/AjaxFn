@@ -1,18 +1,23 @@
-import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import json from "rollup-plugin-json";
+import builtins from "rollup-plugin-node-builtins";
 
 import pkg from "./package.json";
 
 export default [
   {
     input: "src/index.js",
+    external: ["axios", "qs"],
     output: {
       name: "ajaxFn",
       file: pkg.browser,
-      format: "umd"
+      format: "umd",
+      globals: {
+        axios: "axios",
+        qs: "qs"
+      }
     },
-    plugins: [resolve(), commonjs(), json()]
+    plugins: [commonjs(), json(), builtins()]
   },
   {
     input: "src/index.js",
