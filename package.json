@@ -16,8 +16,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "node test/test.js",
-    "pretest": "npm run build",
+    "test": "echo \"what tests? 😟\"",
     "prepublish": "npm run build"
   },
   "keywords": [

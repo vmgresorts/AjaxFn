@@ -13,6 +13,7 @@ const func = fn => (typeof fn === "function" ? fn : () => true);
 
 /**
  * AjaxFn
+ * @param {*} settings url, success, failure, finally
  * @author https://github.com/crwdzr
  */
 const AjaxFn = (settings = {}) => {
